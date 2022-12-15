@@ -1,6 +1,4 @@
-# How To Deploy a Timelock Smart
-
-# Contract on an EVM Compatible Chain
+# How To Deploy a Timelock Smart Contract on an EVM Compatible Chain
 
 ##### The introduction of Smart Contracts to the blockchain ecosystem has opened the door
 
