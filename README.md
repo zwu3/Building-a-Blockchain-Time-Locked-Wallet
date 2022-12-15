@@ -153,4 +153,9 @@ To compile the contracts, run:
 This should result in something resembling the following:
 (https://github.com/zwu3/Building-a-Blockchain-Time-Locked-Wallet/blob/519ce6961142cd8289c849036413add6932297a0/screenshot.png).
 
+Then install Metamask on your machine, enter the private keys that were provided in the terminal.
+
+A visual guild for the installtion:
+https://trufflesuite.com/guides/pet-shop/#interacting-with-the-dapp-in-a-browser
+
 
