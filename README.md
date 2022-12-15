@@ -86,22 +86,71 @@ V16.18.
 $ npm -v
 8.19.
 ```
-### Smart Contract Deployment
+Install Truffle Framewrok
+To install it, run the following command:
 
-##### use the truffle test command which runs the truffle
+```
+npm install -g truffle
+```
 
-##### compile and the truffle migrate commands consecutively.In the background, Truffle
+Now, get the code of this project:
 
-##### launches a local/virtual blockchain to compile, deploy, and then test the smart contract.
+```
+git clone https://github.com/zwu3/Building-a-Blockchain-Time-Locked-Wallet.git
+cd timelock-main
+```
+### Truffle Console: Compile, Migrate, and Test Smart Contracts
 
-##### At the end of the process, Truffle destroys the virtual network and its associated data.
+To get started quickly, run Truffle with the built-in blockchain:
 
-##### Nothing persists once the test is complete.
+```
+truffle develop
+```
 
-##### To deploy to a local or public network that will persist our contract and its data, you
+You should see something like this:
 
-##### to explicitly use the truffle migrate command, andspecify the network we would like to
+```
+Truffle Develop started at http://127.0.0.1:9545/
 
-##### deploy to, with the –network flag. Truffle is smartenough to look up those
+Accounts:
+(0) 0x2a8cd24339dccbe314e69f6c9d7dca097bbb979b
+(1) 0xd017244a8dcc96c7e8e55d088edd5141098abf21
+(2) 0x3a9625bf18bb9e2175dd422ec70e030fe92431fb
+(3) 0x206afea815092cf89929844959f129e7673f06d6
+(4) 0xd9a2e0e803e37d54893b74a0bc5cc0d9dcaf6667
+(5) 0xd583f922b0dc654bd84c89057ec693aa80ea54fa
+(6) 0xb070322b142e7825d187289d865845787eb41686
+(7) 0x99d26633464dd86bbe58fc594245ef7c143f9735
+(8) 0x16bec01c9cd845b12308619a1f4e77fffc5189e9
+(9) 0x116c9eff9ede07959596fb204740547d53384995
 
-##### configurations inside the truffle-config.js file,located in the root of your project folder.
+Private Keys:
+(0) 0ed7b90cbd097dc501be4c15e0b0b5b8e0afa7e31648b3f81ad79170703e3756
+(1) a42dace5c2619554f8b1b4e843cdc6b2ff8b1d1907efffe97f29a1e60826ba85
+(2) a61f896979dcb7ec94766a549fd5b97efc484ec9d973edf1022c9db6adf0912d
+(3) 3be2478bb20c819ba0732e4a2de6de3705caf61276ab4edbd11beba74e0ea8a2
+(4) e250b62c51384714483895b7334f77af5204bf815d9634d9f5c4cf887d82fdbd
+(5) 65233f75e780b358985b9343acc846daf7f0205e847a4c27562f0ad199698af9
+(6) 79c5dc74d0cae4ab03b8d1d42e4643f87492225be9cc951f8e858f7342f58bc7
+(7) 998dcbe62e76de6f7e32a83cb5eafb7395e8dd845d03e8f9ec7a7c2557549a35
+(8) bbbd71c3d5b1f878e8b5dd93c79512749739cd83202bfc0bdff68bcffb9a9954
+(9) 34f181b9dd5fc0cf510f4ebf31d09a6654c9c705454f7dcaa2aa89055520613b
+
+Mnemonic: upper deer table word local abuse forget output fury amused tennis limb
+
+⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
+Ensure you do not use it on production blockchains, or else you risk losing funds.
+```
+
+The mnemonic seed lets you recreate your private and public keys.
+
+To compile the contracts, run:
+
+```
+> compile
+```
+
+This should result in something resembling the following:
+(https://github.com/zwu3/Building-a-Blockchain-Time-Locked-Wallet/blob/519ce6961142cd8289c849036413add6932297a0/screenshot.png).
+
+
